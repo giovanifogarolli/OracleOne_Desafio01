@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Decodificador - OracleOne</title>
+</head>
+<body>
+    <div class="sidebar__logo">
+        <img src="src/assets/Logo.png" alt="">
+    </div>
+    <div class="decod__main">
+        <div class="decod__text">
+            <textarea id="decod-txt" placeholder="Digite seu texto" required maxlength="952"></textarea>
+        </div>
+        <div class="aviso">
+            <span class="fa fa-circle-exclamation"></span>
+            <span>Apenas letras minúsculas e sem acento.</span>
+        </div>
+        <div class="decod__btns">
+            <button class="btn btn-background">
+                <p class="text cripto">Criptografar</p>
+            </button>
+            <button class="btn btn-transparente">
+                <p class="text descripto">Descriptogravar</p>
+            </button>
+        </div>
+    </div>
+    <div class="decod__result">
+        <div class="results__contents">
+            <textarea id="result-txt" readonly></textarea>
+            <button class="text btn btn-transparente">Copiar</button>
+        </div>
+        
+    </div>
+</body>
+</html>

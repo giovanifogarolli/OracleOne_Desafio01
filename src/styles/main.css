@@ -61,7 +61,7 @@ body{
     font-weight: 400;
 }
 
-.fa{
+.fa-circle-exclamation{
     width: 16px;
     height: 16px;
 }
@@ -149,5 +149,64 @@ body{
 .results__contents button{
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
+.menu__credenciais{
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    position: fixed;
+    align-items: center;
+    bottom: 0;
+    left: 25vw;
+    border: 1px solid #FFF;
+    padding: 8px;
+    border-radius: 32px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+    margin-bottom: 16px;
+}
+
+.credenciais__content{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu__credenciais .menu-pfp{
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.menu__credenciais .menu-btn{
+    border: none;
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+    background-color: transparent;
+}
+
+.hidden{
+    display: none;
+}
+
+.closed{
+    transform: rotate(0);
+}
+
+.open{
+    transform: rotate(-90deg);
+    animation-duration: 200ms;
+}
+
+.on{
+    transition: 300ms ease-in-out;
+    width: 315px;
+}
+
+.off{
+    transition: 300ms ease-in-out;
+    width: 54px;
+}
